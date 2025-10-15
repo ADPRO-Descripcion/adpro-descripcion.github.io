@@ -6,7 +6,6 @@
   <title>Contacto | ADPRO-Descripción</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
   <header>
     <h1>ADPRO-Descripción</h1>
@@ -17,21 +16,36 @@
       <a href="formacion.html">Formación</a>
       <a href="recursos.html">Recursos</a>
       <a href="blog.html">Blog</a>
-      <a href="contacto.html">Contacto</a>
+      <a href="contacto.html" class="active">Contacto</a>
     </nav>
   </header>
 
   <main>
     <section>
-      <h2>Contacto</h2>
-      <p>Si deseas ponerte en contacto con el equipo de ADPRO-Descripción, puedes hacerlo a través del siguiente correo:</p>
-      <p><strong>Email:</strong> <a href="mailto:adprodescripcion@outlook.es">adprodescripcion@outlook.es</a></p>
-      <p>También puedes seguir nuestras redes y proyectos asociados sobre accesibilidad cultural y audiodescripción profesional.</p>
+      <h2>Contáctanos</h2>
+      <p style="text-align:center; max-width:700px; margin:0 auto 40px;">
+        Si deseas colaborar, solicitar información o compartir recursos sobre accesibilidad cultural,
+        puedes enviarnos un mensaje a través del siguiente formulario o escribirnos directamente a:
+        <a href="mailto:adprodescripcion@outlook.es">adprodescripcion@outlook.es</a>
+      </p>
+
+      <form class="contact-form" action="#" method="post">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 ADPRO-Descripción | <a href="mailto:adprodescripcion@outlook.es">adprodescripcion@outlook.es</a></p>
+    <p>© 2025 ADPRO-Descripción · <a href="mailto:adprodescripcion@outlook.es">adprodescripcion@outlook.es</a></p>
   </footer>
 </body>
 </html>
