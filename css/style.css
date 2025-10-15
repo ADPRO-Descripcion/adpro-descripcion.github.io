@@ -221,3 +221,68 @@ main > section > p {
   margin: 0.5rem auto 1.5rem;
   color: #444;
 }
+/* === RECURSOS CON ICONOS === */
+.recursos {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8fbff;
+}
+
+.recursos .intro {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #333;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.tarjetas-recursos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 30px 25px;
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta i {
+  font-size: 28px;
+  color: #003366;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.tarjeta p {
+  color: #444;
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.tarjeta a {
+  text-decoration: none;
+  color: #0056b3;
+  font-weight: bold;
+}
+
+.tarjeta a:hover {
+  color: #002b5c;
+}
