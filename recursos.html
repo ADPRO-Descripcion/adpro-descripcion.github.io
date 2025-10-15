@@ -3,36 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recursos - ADPRO-Descripción</title>
+  <title>Recursos | ADPRO-Descripción</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static/font/lucide.css">
 </head>
-
 <body>
   <header>
     <h1>ADPRO-Descripción</h1>
     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="conocenos.html">Conócenos</a>
-      <a href="formacion.html">Formación</a>
-      <a href="blog.html">Blog</a>
-      <a href="contacto.html">Contacto</a>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="conocenos.html">Conócenos</a></li>
+        <li><a href="formacion.html">Formación</a></li>
+        <li><a href="metodologia.html">Metodología</a></li>
+        <li><a href="recursos.html" class="active">Recursos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section>
-    <h2>Recursos</h2>
-    <p>En esta sección encontrarás <strong>materiales, guías y herramientas</strong> creadas para docentes, investigadores y profesionales de la accesibilidad cultural.</p>
+  <main class="contenido">
+    <section class="recursos">
+      <h2>Recursos</h2>
+      <p class="intro">
+        En esta sección encontrarás <strong>materiales, guías y herramientas</strong> creadas para docentes, investigadores y profesionales interesados en la accesibilidad cultural.
+      </p>
 
-    <ul>
-      <li><a href="#">Guía de redacción inclusiva</a></li>
-      <li><a href="#">Manual de audiodescripción profesional</a></li>
-      <li><a href="#">Plantillas para formación accesible</a></li>
-      <li><a href="#">Bibliografía sobre accesibilidad cultural</a></li>
-    </ul>
-  </section>
+      <div class="tarjetas-recursos">
+        <div class="tarjeta">
+          <i class="lucide lucide-book"></i>
+          <h3>Manual de redacción inclusiva</h3>
+          <p>Guía práctica con ejemplos y recomendaciones para escribir con lenguaje inclusivo y accesible.</p>
+          <a href="#">Descargar</a>
+        </div>
+
+        <div class="tarjeta">
+          <i class="lucide lucide-headphones"></i>
+          <h3>Manual de audiodescripción profesional</h3>
+          <p>Ejercicios y técnicas de audiodescripción aplicadas a cine, teatro y exposiciones.</p>
+          <a href="#">Descargar</a>
+        </div>
+
+        <div class="tarjeta">
+          <i class="lucide lucide-puzzle"></i>
+          <h3>Plantillas para formación accesible</h3>
+          <p>Modelos editables para planificar y evaluar programas formativos inclusivos.</p>
+          <a href="#">Descargar</a>
+        </div>
+
+        <div class="tarjeta">
+          <i class="lucide lucide-library"></i>
+          <h3>Bibliografía sobre accesibilidad cultural</h3>
+          <p>Listado actualizado de referencias y recursos académicos sobre comunicación accesible.</p>
+          <a href="#">Ver listado</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 ADPRO-Descripción · Proyecto de formación e investigación en accesibilidad cultural</p>
+    <p>© 2025 ADPRO-Descripción · <a href="mailto:adprodescripcion@outlook.es">adprodescripcion@outlook.es</a></p>
   </footer>
 </body>
 </html>
