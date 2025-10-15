@@ -1,4 +1,4 @@
-/* --- Reset general --- */
+/* --- Reinicio global --- */
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +8,11 @@
 /* --- Estructura base --- */
 html, body {
   height: 100%;
-  display: flex;
-  flex-direction: column;
   font-family: "Segoe UI", Arial, sans-serif;
   background-color: #f8f9fb;
   color: #222;
-  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
 }
 
 /* --- Cabecera --- */
@@ -30,6 +29,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .main-header h1 {
@@ -40,6 +40,7 @@ html, body {
 .main-nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -48,8 +49,8 @@ html, body {
   text-decoration: none;
   font-weight: 500;
   padding: 0.5rem 0.8rem;
-  transition: background 0.3s;
   border-radius: 6px;
+  transition: background 0.3s;
 }
 
 .main-nav a:hover,
@@ -59,8 +60,9 @@ html, body {
 
 /* --- Contenido principal --- */
 main.section {
-  flex: 1;
+  flex: 1; /* Ocupa todo el espacio disponible */
   width: 90%;
+  max-width: 1000px;
   margin: 3rem auto;
   text-align: center;
 }
@@ -72,13 +74,12 @@ main.section h2 {
 }
 
 main.section p {
-  max-width: 800px;
-  margin: 0 auto 2rem auto;
   font-size: 1.1rem;
   color: #333;
+  margin-bottom: 2rem;
 }
 
-/* --- Grid y tarjetas --- */
+/* --- Tarjetas y cuadrícula --- */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -128,20 +129,10 @@ main.section p {
   }
 
   .main-nav ul {
-    flex-wrap: wrap;
     justify-content: center;
   }
 
   main.section h2 {
     font-size: 1.6rem;
   }
-/* --- Ajuste visual para mantener el footer al fondo --- */
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-main.section {
-  flex-grow: 1;
 }
