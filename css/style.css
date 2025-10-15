@@ -196,3 +196,14 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* --- Ajuste global de centrado de títulos --- */
+h1, h2 {
+  text-align: center;
+  color: #002b5c;
+}
+
+section p {
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 900px;
+}
