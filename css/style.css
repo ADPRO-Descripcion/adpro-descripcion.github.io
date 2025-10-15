@@ -135,4 +135,13 @@ main.section p {
   main.section h2 {
     font-size: 1.6rem;
   }
+/* --- Ajuste visual para mantener el footer al fondo --- */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main.section {
+  flex-grow: 1;
 }
