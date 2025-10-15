@@ -5,74 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recursos - ADPRO-Descripción</title>
   <link rel="stylesheet" href="css/style.css">
-
   <style>
-    /* ESTILO ESPECÍFICO PARA RECURSOS */
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9fafc;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    h1 {
-      text-align: center;
-      color: #003366;
-      margin-top: 2rem;
-    }
-
-    p.intro {
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto 2rem auto;
-      color: #333;
-    }
-
-    .resource-card {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    main {
       max-width: 900px;
-      margin: 1.5rem auto;
-      padding: 1.5rem;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
-    .resource-card h2 {
+    h2, p {
+      text-align: center;
+    }
+
+    .recurso {
+      margin: 1.5rem 0;
+      padding: 1rem;
+      border-left: 4px solid #003366;
+      background-color: #f9fafc;
+      border-radius: 8px;
+    }
+
+    .recurso h3 {
+      margin-top: 0;
       color: #003366;
-      margin-bottom: 0.5rem;
     }
 
-    .resource-card p {
-      margin-bottom: 1rem;
-    }
-
-    .resource-card a {
-      color: #004aad;
-      font-weight: bold;
+    .recurso a {
+      color: #0066cc;
       text-decoration: none;
     }
 
-    .resource-card a:hover {
+    .recurso a:hover {
       text-decoration: underline;
     }
 
     footer {
-      background-color: #003366;
+      margin-top: 3rem;
+      background: #003366;
       color: white;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-
-    footer a {
-      color: #ffcc00;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
+      padding: 1rem 0;
     }
   </style>
 </head>
@@ -92,40 +66,31 @@
   </header>
 
   <main>
-    <h1>Recursos</h1>
-    <p class="intro">
-      En esta sección encontrarás <strong>materiales, guías y herramientas</strong> creadas para docentes,
-      investigadores y profesionales interesados en la accesibilidad cultural.
-    </p>
+    <h2>Recursos</h2>
+    <p>Explora materiales, guías y herramientas que promueven la accesibilidad cultural y la comunicación inclusiva.</p>
 
-    <section class="resource-card">
-      <h2>Manual de redacción inclusiva</h2>
-      <p>Guía práctica con ejemplos y recomendaciones para escribir con lenguaje inclusivo y accesible.</p>
-      <a href="#">Descargar</a>
-    </section>
+    <div class="recurso">
+      <h3>Guía básica de accesibilidad cultural</h3>
+      <p>Documento introductorio sobre buenas prácticas en accesibilidad en el ámbito cultural.</p>
+      <p><a href="#">Descargar PDF</a></p>
+    </div>
 
-    <section class="resource-card">
-      <h2>Manual de audiodescripción profesional</h2>
-      <p>Ejercicios y técnicas de audiodescripción aplicadas a cine, teatro y exposiciones.</p>
-      <a href="#">Descargar</a>
-    </section>
+    <div class="recurso">
+      <h3>Plantillas de audiodescripción</h3>
+      <p>Modelos editables para proyectos audiovisuales con pautas de descripción y estructura narrativa.</p>
+      <p><a href="#">Ver plantillas</a></p>
+    </div>
 
-    <section class="resource-card">
-      <h2>Plantillas para formación accesible</h2>
-      <p>Modelos editables de documentos, presentaciones y materiales accesibles para cursos.</p>
-      <a href="#">Descargar</a>
-    </section>
-
-    <section class="resource-card">
-      <h2>Bibliografía sobre accesibilidad cultural</h2>
-      <p>Compilación de referencias y lecturas recomendadas sobre inclusión y comunicación accesible.</p>
-      <a href="#">Consultar</a>
-    </section>
+    <div class="recurso">
+      <h3>Glosario de términos inclusivos</h3>
+      <p>Listado actualizado de conceptos clave sobre accesibilidad, inclusión y comunicación responsable.</p>
+      <p><a href="#">Abrir glosario</a></p>
+    </div>
   </main>
 
   <footer>
-    © 2025 ADPRO-Descripción · Proyecto de formación e investigación en accesibilidad cultural ·
-    <a href="mailto:adprodescripcion@outlook.es">adprodescripcion@outlook.es</a>
+    <p>© 2025 ADPRO-Descripción · Recursos para la accesibilidad cultural</p>
+    <p>adprodescripcion@outlook.es</p>
   </footer>
 </body>
 </html>
