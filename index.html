@@ -1,143 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ADPRO-Descripción | Formación, creatividad y accesibilidad</title>
-
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      color: #222;
-      background-color: #fff;
-    }
-
-    header {
-      background-color: #008b8b;
-      color: #fff;
-      padding: 1em 0;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .logo {
-      font-weight: bold;
-      font-size: 1.2em;
-      margin-right: 2em;
-      text-decoration: none;
-      color: white;
-    }
-
-    .nav-list {
-      list-style: none;
-      display: flex;
-      gap: 1.5em;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav-list a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .nav-list a:hover {
-      text-decoration: underline;
-    }
-
-    .hero {
-      background: linear-gradient(180deg, #e0f7f7 0%, #ffffff 100%);
-      text-align: center;
-      padding: 5em 2em;
-    }
-
-    .hero h1 {
-      color: #006666;
-    }
-
-    .hero p {
-      font-size: 1.1em;
-      margin-bottom: 1.5em;
-    }
-
-    .btn {
-      background-color: #008b8b;
-      color: white;
-      padding: 0.8em 1.5em;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .btn:hover {
-      background-color: #006666;
-    }
-
-    section {
-      padding: 3em 2em;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      text-align: center;
-      color: #006666;
-      margin-bottom: 1em;
-    }
-
-    footer {
-      background-color: #008b8b;
-      color: white;
-      text-align: center;
-      padding: 1em 0;
-      margin-top: 3em;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conócenos | ADPRO-Descripción</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="index.html" class="logo">ADPRO-Descripción</a>
-      <ul class="nav-list">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="conocenos.html">Conócenos</a></li>
-        <li><a href="formacion.html">Formación</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+  <!-- CABECERA -->
+  <header class="main-header">
+    <div class="container header-flex">
+      <div class="logo"><h1>ADPRO-Descripción</h1></div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="conocenos.html" class="active">Conócenos</a></li>
+          <li><a href="metodologia.html">Metodología</a></li>
+          <li><a href="formacion.html">Formación</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>Formación, creatividad y accesibilidad en redacción y audiodescripción</h1>
-    <p>ADPRO-Descripción impulsa la formación y la innovación en comunicación inclusiva, escritura profesional y accesibilidad cultural.</p>
-    <a href="conocenos.html" class="btn">Conócenos</a>
-  </section>
+  <!-- CUERPO PRINCIPAL -->
+  <main class="container">
+    <section class="section">
+      <h2>Sobre ADPRO-Descripción</h2>
+      <p>ADPRO-Descripción es un proyecto dedicado a la formación, investigación y creación de materiales sobre audiodescripción, redacción inclusiva y accesibilidad cultural.</p>
+      <p>Creemos en una comunicación consciente, clara y accesible para todas las personas. Nuestro equipo combina experiencia profesional con una mirada humanista y tecnológica.</p>
+    </section>
 
-  <section id="quienes-somos">
-    <h2>Quiénes somos</h2>
-    <p>ADPRO-Descripción es un proyecto dedicado a la enseñanza, la investigación y la difusión de la accesibilidad en la comunicación. Nuestro objetivo es formar a profesionales y creadores en el arte de describir, redactar y comunicar con sensibilidad, precisión y respeto por la diversidad.</p>
-  </section>
+    <section class="section">
+      <h3>Nuestra misión</h3>
+      <p>Promover la accesibilidad cultural y digital mediante formación profesional, investigación aplicada y materiales de calidad.</p>
+    </section>
+  </main>
 
-  <section id="bienvenida">
-    <h2>Bienvenidos a ADPRO-Descripción</h2>
-    <p><strong>Accesibilidad, narrativa y formación en audiodescripción.</strong></p>
-    <p>ADPRO-Descripción trabaja en la investigación, formación y creación de materiales sobre audiodescripción y redacción inclusiva. Buscamos impulsar la accesibilidad cultural a través de la palabra, formando profesionales capaces de escribir para todos los públicos.</p>
-  </section>
-
-  <footer>
-    <p>© 2025 ADPRO-Descripción | Formación, creatividad y accesibilidad</p>
+  <!-- PIE DE PÁGINA -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div>
+        <p><strong>ADPRO-Descripción</strong></p>
+        <p>Formación, investigación y creación en accesibilidad cultural.</p>
+      </div>
+      <div>
+        <p>📧 <a href="mailto:adprodescripcion@outlook.es">adprodescripcion@outlook.es</a></p>
+        <p>© 2025 ADPRO-Descripción — Todos los derechos reservados</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
