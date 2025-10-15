@@ -207,3 +207,17 @@ section p {
   margin: 0 auto;
   max-width: 900px;
 }
+/* --- Ajuste global de alineación visual --- */
+
+/* Centrar títulos y textos de introducción */
+h1, h2, .muted, .intro-text {
+  text-align: center;
+}
+
+/* Centrar párrafos sueltos fuera de tarjetas */
+main > section > p {
+  text-align: center;
+  max-width: 900px;
+  margin: 0.5rem auto 1.5rem;
+  color: #444;
+}
