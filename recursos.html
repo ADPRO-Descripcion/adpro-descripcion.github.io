@@ -4,49 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recursos - ADPRO-Descripción</title>
-  <link rel="stylesheet" href="css/style.css">
+
   <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fafc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #003366;
+    }
+
+    nav li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     main {
       max-width: 900px;
       margin: 2rem auto;
       padding: 2rem;
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: justify;
     }
 
-    h2, p {
+    h2 {
       text-align: center;
-    }
-
-    .recurso {
-      margin: 1.5rem 0;
-      padding: 1rem;
-      border-left: 4px solid #003366;
-      background-color: #f9fafc;
-      border-radius: 8px;
-    }
-
-    .recurso h3 {
-      margin-top: 0;
       color: #003366;
     }
 
-    .recurso a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-
-    .recurso a:hover {
-      text-decoration: underline;
+    .recurso {
+      background-color: #f1f5fb;
+      border-left: 5px solid #003366;
+      padding: 1rem;
+      margin-bottom: 1.2rem;
+      border-radius: 6px;
     }
 
     footer {
-      margin-top: 3rem;
-      background: #003366;
-      color: white;
       text-align: center;
-      padding: 1rem 0;
+      padding: 1rem;
+      background-color: #003366;
+      color: white;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -55,42 +82,41 @@
   <header>
     <h1>ADPRO-Descripción</h1>
     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="conocenos.html">Conócenos</a>
-      <a href="metodologia.html">Metodología</a>
-      <a href="formacion.html">Formación</a>
-      <a href="recursos.html">Recursos</a>
-      <a href="blog.html">Blog</a>
-      <a href="contacto.html">Contacto</a>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="conocenos.html">Conócenos</a></li>
+        <li><a href="metodologia.html">Metodología</a></li>
+        <li><a href="formacion.html">Formación</a></li>
+        <li><a href="recursos.html" class="active">Recursos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <h2>Recursos</h2>
-    <p>Explora materiales, guías y herramientas que promueven la accesibilidad cultural y la comunicación inclusiva.</p>
+    <h2>Recursos y materiales</h2>
+    <p>En esta sección encontrarás materiales de referencia, guías prácticas y herramientas útiles para docentes, creadores y profesionales del ámbito de la accesibilidad cultural y la audiodescripción.</p>
 
     <div class="recurso">
-      <h3>Guía básica de accesibilidad cultural</h3>
-      <p>Documento introductorio sobre buenas prácticas en accesibilidad en el ámbito cultural.</p>
-      <p><a href="#">Descargar PDF</a></p>
+      <h3>📘 Guía de redacción inclusiva</h3>
+      <p>Principios y ejemplos para un lenguaje accesible, respetuoso e inclusivo en distintos contextos profesionales.</p>
     </div>
 
     <div class="recurso">
-      <h3>Plantillas de audiodescripción</h3>
-      <p>Modelos editables para proyectos audiovisuales con pautas de descripción y estructura narrativa.</p>
-      <p><a href="#">Ver plantillas</a></p>
+      <h3>🎧 Manual de audiodescripción</h3>
+      <p>Documentación técnica y formativa para la creación de audiodescripciones en medios audiovisuales, museos y exposiciones.</p>
     </div>
 
     <div class="recurso">
-      <h3>Glosario de términos inclusivos</h3>
-      <p>Listado actualizado de conceptos clave sobre accesibilidad, inclusión y comunicación responsable.</p>
-      <p><a href="#">Abrir glosario</a></p>
+      <h3>🧩 Herramientas de apoyo</h3>
+      <p>Recopilación de software y recursos en línea para el trabajo con accesibilidad cultural y comunicación inclusiva.</p>
     </div>
   </main>
 
   <footer>
-    <p>© 2025 ADPRO-Descripción · Recursos para la accesibilidad cultural</p>
-    <p>adprodescripcion@outlook.es</p>
+    <p>© 2025 ADPRO-Descripción · Accesibilidad cultural y audiodescripción profesional</p>
+    <p><a href="mailto:adprodescripcion@outlook.es">adprodescripcion@outlook.es</a></p>
   </footer>
 </body>
 </html>
