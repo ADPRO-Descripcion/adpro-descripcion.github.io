@@ -1,45 +1,24 @@
-/* 🌐 ADPRO-DESCRIPCIÓN — Estilos globales 2025
-   Diseño profesional, accesible y limpio */
-
-:root {
-  --azul: #0b66d1;
-  --azul-oscuro: #062a4a;
-  --gris-suave: #f5f8fb;
-  --texto: #1b1b1b;
-  --sombra: rgba(0, 0, 0, 0.08);
-  --radio: 12px;
-  --ancho: 1100px;
-  --font: 'Inter', 'Segoe UI', Arial, sans-serif;
-}
-
-/* Reset */
-* {
-  box-sizing: border-box;
+/* ===== ESTILO GENERAL ===== */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-family: var(--font);
-  color: var(--texto);
-  background-color: var(--gris-suave);
+  background-color: #f7f9fc;
+  color: #222;
   line-height: 1.6;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
-/* Cabecera */
+/* ===== CABECERA / NAVBAR ===== */
 header {
-  background-color: var(--azul-oscuro);
+  background-color: #042b4f;
   color: white;
+  padding: 1rem 0;
   text-align: center;
-  padding: 1.5rem 1rem;
-  box-shadow: 0 2px 6px var(--sombra);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-  margin-bottom: 0.5rem;
+  margin: 0;
   font-size: 1.8rem;
 }
 
@@ -50,177 +29,151 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 0.8rem;
-  font-weight: 500;
-  transition: 0.2s;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #ffdd57;
 }
 
-/* Hero */
-.hero {
-  background: linear-gradient(180deg, rgba(11,102,209,0.05), #ffffff);
-  padding: 3rem 1rem;
-  text-align: center;
-  max-width: var(--ancho);
-  margin: 2rem auto;
-  border-radius: var(--radio);
-  box-shadow: 0 4px 14px var(--sombra);
-}
-
-.hero h2 {
-  font-size: 1.9rem;
-  color: var(--azul-oscuro);
-  margin-bottom: 0.5rem;
-}
-
-.hero p {
-  color: #444;
-  max-width: 700px;
-  margin: 0.5rem auto 1.5rem;
-}
-
-.botones {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.7rem 1.2rem;
-  background: var(--azul);
-  color: white;
-  border-radius: var(--radio);
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.2s ease-in-out;
-}
-
-.btn:hover {
-  background: #0e78f1;
-}
-
-.btn.secundario {
-  background: transparent;
-  border: 2px solid var(--azul);
-  color: var(--azul);
-}
-
-.btn.secundario:hover {
-  background: var(--azul);
-  color: white;
-}
-
-/* Secciones */
-.secciones {
-  max-width: var(--ancho);
-  margin: 2rem auto;
+/* ===== SECCIONES ===== */
+section {
+  max-width: 1000px;
+  margin: 3rem auto;
   padding: 0 1rem;
 }
 
-.secciones h2 {
+h2 {
   text-align: center;
-  color: var(--azul-oscuro);
+  font-size: 1.9rem;
+  color: #042b4f;
   margin-bottom: 1rem;
 }
 
-.tarjetas {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-
-.tarjeta {
-  background: white;
-  padding: 1.5rem;
-  border-radius: var(--radio);
-  box-shadow: 0 6px 14px var(--sombra);
-  transition: all 0.2s ease-in-out;
-}
-
-.tarjeta:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px var(--sombra);
-}
-
-.tarjeta h3 {
+h3 {
+  color: #042b4f;
   margin-bottom: 0.5rem;
-  color: var(--azul);
 }
 
-.tarjeta p {
-  color: #555;
-  margin-bottom: 1rem;
+/* ===== TARJETAS ===== */
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.link {
-  color: var(--azul);
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 0.8rem;
+}
+
+/* ===== ENLACES ===== */
+a {
+  color: #0056b3;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-.link:hover {
+a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
+/* ===== BOTONES ===== */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  background-color: #0056b3;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #013b80;
+}
+
+/* ===== BLOG Y RECURSOS ===== */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ===== PIE DE PÁGINA ===== */
 footer {
-  background: var(--azul-oscuro);
+  background-color: #042b4f;
   color: white;
   text-align: center;
-  padding: 1.2rem;
-  margin-top: auto;
-  box-shadow: 0 -2px 6px var(--sombra);
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 1.4rem;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 0.4rem;
-  }
-
-  .hero h2 {
-    font-size: 1.5rem;
-  }
-
-  .tarjetas {
-    grid-template-columns: 1fr;
-  }
-}
-/* --- Ajuste global de centrado de títulos --- */
-h1, h2 {
-  text-align: center;
-  color: #002b5c;
+footer a {
+  color: #ffdd57;
+  text-decoration: none;
 }
 
-section p {
-  text-align: justify;
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== CONTACTO ===== */
+.contact-form {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 700px;
   margin: 0 auto;
-  max-width: 900px;
-}
-/* --- Ajuste global de alineación visual --- */
-
-/* Centrar títulos y textos de introducción */
-h1, h2, .muted, .intro-text {
-  text-align: center;
 }
 
-/* Centrar párrafos sueltos fuera de tarjetas */
-main > section > p {
-  text-align: center;
-  max-width: 900px;
-  margin: 0.5rem auto 1.5rem;
-  color: #444;
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
 }
+
+.contact-form button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #013b80;
+}
+
 /* === RECURSOS CON ICONOS === */
 .recursos {
   text-align: center;
