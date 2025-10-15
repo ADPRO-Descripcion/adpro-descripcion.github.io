@@ -1,25 +1,45 @@
-/* ===========================
-   ADPRO-DESCRIPCIÓN - ESTILO PRINCIPAL
-   =========================== */
+/* 🌐 ADPRO-DESCRIPCIÓN — Estilos globales 2025
+   Diseño profesional, accesible y limpio */
 
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9fafc;
-  color: #333;
-  line-height: 1.6;
+:root {
+  --azul: #0b66d1;
+  --azul-oscuro: #062a4a;
+  --gris-suave: #f5f8fb;
+  --texto: #1b1b1b;
+  --sombra: rgba(0, 0, 0, 0.08);
+  --radio: 12px;
+  --ancho: 1100px;
+  --font: 'Inter', 'Segoe UI', Arial, sans-serif;
 }
 
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--texto);
+  background-color: var(--gris-suave);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabecera */
 header {
-  background-color: #003366;
+  background-color: var(--azul-oscuro);
   color: white;
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 2px 6px var(--sombra);
 }
 
 header h1 {
-  margin: 0;
+  margin-bottom: 0.5rem;
   font-size: 1.8rem;
 }
 
@@ -32,71 +52,147 @@ nav a {
   text-decoration: none;
   margin: 0 0.8rem;
   font-weight: 500;
+  transition: 0.2s;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
-section {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-h2 {
-  color: #003366;
-  margin-top: 0;
-}
-
-footer {
-  background-color: #003366;
-  color: white;
+/* Hero */
+.hero {
+  background: linear-gradient(180deg, rgba(11,102,209,0.05), #ffffff);
+  padding: 3rem 1rem;
   text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
-  font-size: 0.9rem;
+  max-width: var(--ancho);
+  margin: 2rem auto;
+  border-radius: var(--radio);
+  box-shadow: 0 4px 14px var(--sombra);
 }
 
-/* Tarjetas de formación */
-.cursos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.cursos article {
-  background: #f0f4fa;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-.cursos h3 {
-  color: #003366;
+.hero h2 {
+  font-size: 1.9rem;
+  color: var(--azul-oscuro);
   margin-bottom: 0.5rem;
 }
 
-/* Enlaces */
-a {
-  color: #003366;
+.hero p {
+  color: #444;
+  max-width: 700px;
+  margin: 0.5rem auto 1.5rem;
 }
 
-a:hover {
-  color: #0055aa;
+.botones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  background: var(--azul);
+  color: white;
+  border-radius: var(--radio);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background: #0e78f1;
+}
+
+.btn.secundario {
+  background: transparent;
+  border: 2px solid var(--azul);
+  color: var(--azul);
+}
+
+.btn.secundario:hover {
+  background: var(--azul);
+  color: white;
+}
+
+/* Secciones */
+.secciones {
+  max-width: var(--ancho);
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.secciones h2 {
+  text-align: center;
+  color: var(--azul-oscuro);
+  margin-bottom: 1rem;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.tarjeta {
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--radio);
+  box-shadow: 0 6px 14px var(--sombra);
+  transition: all 0.2s ease-in-out;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px var(--sombra);
+}
+
+.tarjeta h3 {
+  margin-bottom: 0.5rem;
+  color: var(--azul);
+}
+
+.tarjeta p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.link {
+  color: var(--azul);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: var(--azul-oscuro);
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: auto;
+  box-shadow: 0 -2px 6px var(--sombra);
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   header h1 {
     font-size: 1.4rem;
   }
 
-  section {
-    padding: 1rem;
+  nav a {
+    display: inline-block;
+    margin: 0.4rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .tarjetas {
+    grid-template-columns: 1fr;
   }
 }
