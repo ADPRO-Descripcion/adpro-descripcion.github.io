@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ADPRO-Descripción: formación, investigación y materiales sobre accesibilidad cultural, redacción inclusiva y audiodescripción profesional.">
   <title>ADPRO-Descripción</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header>
     <h1>ADPRO-Descripción</h1>
     <nav>
+      <a href="index.html">Inicio</a>
       <a href="conocenos.html">Conócenos</a>
+      <a href="metodologia.html">Metodología</a>
       <a href="formacion.html">Formación</a>
       <a href="recursos.html">Recursos</a>
       <a href="blog.html">Blog</a>
@@ -18,34 +22,38 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
+  <main class="hero">
+    <section class="intro">
       <h2>Accesibilidad cultural y audiodescripción profesional</h2>
       <p>Formación, investigación y creación de materiales sobre accesibilidad cultural, redacción inclusiva y audiodescripción profesional.</p>
-    </section>
-
-    <section class="destacados">
-      <h3>Secciones principales</h3>
-
-      <article>
-        <h4>Formación</h4>
-        <p>Cursos y talleres sobre accesibilidad cultural, redacción inclusiva y audiodescripción.</p>
-        <a href="formacion.html">Ver cursos →</a>
-      </article>
-
-      <article>
-        <h4>Recursos</h4>
-        <p>Materiales, guías y herramientas para docentes y profesionales de la inclusión.</p>
-        <a href="recursos.html">Explorar recursos →</a>
-      </article>
-
-      <article>
-        <h4>Blog</h4>
-        <p>Artículos, investigaciones y novedades sobre accesibilidad y comunicación inclusiva.</p>
-        <a href="blog.html">Visitar blog →</a>
-      </article>
+      <div class="botones">
+        <a href="formacion.html" class="btn">Formación</a>
+        <a href="conocenos.html" class="btn secundario">Conócenos</a>
+        <a href="contacto.html" class="btn">Contacto</a>
+      </div>
     </section>
   </main>
+
+  <section class="secciones">
+    <h2>Secciones principales</h2>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <h3>Formación</h3>
+        <p>Cursos y talleres sobre accesibilidad cultural, redacción inclusiva y audiodescripción.</p>
+        <a href="formacion.html" class="link">Ver cursos →</a>
+      </div>
+      <div class="tarjeta">
+        <h3>Recursos</h3>
+        <p>Materiales, guías y herramientas para docentes y profesionales de la inclusión.</p>
+        <a href="recursos.html" class="link">Explorar recursos →</a>
+      </div>
+      <div class="tarjeta">
+        <h3>Blog</h3>
+        <p>Artículos, investigaciones y novedades sobre accesibilidad y comunicación inclusiva.</p>
+        <a href="blog.html" class="link">Visitar blog →</a>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <p>© 2025 ADPRO-Descripción · Proyecto de formación e investigación en accesibilidad cultural</p>
