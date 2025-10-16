@@ -50,5 +50,13 @@
     <p>© 2025 ADPRO-Descripción · Accesibilidad cultural y comunicación inclusiva</p>
     <p><a href="mailto:adprodescripcion@outlook.es">adprodescripcion@outlook.es</a></p>
   </footer>
+  <script>
+  const form = document.querySelector('.contact-form');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita el envío real
+    alert('¡Gracias por contactarnos! Tu mensaje ha sido recibido.');
+    form.reset(); // Limpia los campos del formulario
+  });
+</script>
 </body>
 </html>
