@@ -3,76 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto | ADPRO-Descripción</title>
-  <meta name="description" content="Formulario de contacto de ADPRO-Descripción para consultas, colaboraciones o propuestas de formación.">
+  <title>ADPRO-Descripción</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
   <header>
     <h1>ADPRO-Descripción</h1>
     <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="conocenos.html">Conócenos</a></li>
-        <li><a href="metodologia.html">Metodología</a></li>
-        <li><a href="formacion.html">Formación</a></li>
-        <li><a href="recursos.html">Recursos</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contacto.html" class="active">Contacto</a></li>
-      </ul>
+      <a href="index.html">Inicio</a>
+      <a href="conocenos.html">Conócenos</a>
+      <a href="metodologia.html">Metodología</a>
+      <a href="formacion.html">Formación</a>
+      <a href="recursos.html">Recursos</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html">Contacto</a>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Contáctanos</h2>
-      <p>¿Tienes alguna pregunta, propuesta de colaboración o idea relacionada con la accesibilidad cultural?  
-      Completa el siguiente formulario o escríbenos directamente a  
-      <a href="mailto:adprodescripcion@outlook.es">adprodescripcion@outlook.es</a>.</p>
-
-      <form action="https://formspree.io/f/mayzvqjl" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="_replyto" required>
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-        <button type="submit">Enviar mensaje</button>
-      </form>
+    <section class="contenido">
+      <h2>Bienvenidos a ADPRO-Descripción</h2>
+      <p>
+        Proyecto dedicado a la investigación, formación y creación de materiales sobre accesibilidad cultural,
+        redacción inclusiva y audiodescripción profesional.
+      </p>
+      <p>
+        Formamos y acompañamos a profesionales para mejorar la comunicación inclusiva en el ámbito educativo, cultural y audiovisual.
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 ADPRO-Descripción · Accesibilidad cultural y comunicación inclusiva</p>
-    <p><a href="mailto:adprodescripcion@outlook.es">adprodescripcion@outlook.es</a></p>
+    <p>© 2025 ADPRO-Descripción | adprodescripcion@outlook.es</p>
   </footer>
-  <script>
-  const form = document.querySelector('.contact-form');
-  form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita el envío real
-    alert('¡Gracias por contactarnos! Tu mensaje ha sido recibido.');
-    form.reset(); // Limpia los campos del formulario
-  });
-<script>
-  const form = document.querySelector('.contact-form');
-  const msg = document.getElementById('form-message');
-
-  form.addEventListener('submit', function(event) {
-    event.preventDefault(); // evita envío real
-    msg.style.display = 'block'; // muestra el mensaje
-    form.reset(); // limpia los campos
-    window.scrollTo({ top: form.offsetTop, behavior: 'smooth' }); // sube al mensaje
-    setTimeout(() => {
-      msg.style.display = 'none'; // oculta el mensaje tras 5 s
-    }, 5000);
-  });
-</script>  
 </body>
 </html>
-<p id="form-message" style="display:none; text-align:center; color:#155724; background:#d4edda; border:1px solid #c3e6cb; padding:1rem; border-radius:8px; margin-top:1rem;">
-  Tu mensaje se envió correctamente. ¡Gracias por contactarnos!
-</p>
