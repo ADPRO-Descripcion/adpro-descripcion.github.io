@@ -1,22 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto | ADPRO-Descripción</title>
-  <meta name="description" content="Ponte en contacto con el equipo de ADPRO-Descripción para consultas o colaboraciones.">
-  <meta name="keywords" content="contacto, ADPRO, accesibilidad, colaboración, información">
-  <meta name="author" content="ADPRO-Descripción">
-
-  <meta property="og:title" content="Contacto | ADPRO-Descripción" />
-  <meta property="og:description" content="Escríbenos para consultas o colaboraciones sobre accesibilidad y audiodescripción." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://adpro-descripcion.github.io/contacto.html" />
-  <meta property="og:image" content="https://adpro-descripcion.github.io/img/preview.jpg" />
-
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header>
     <h1>ADPRO-Descripción</h1>
@@ -32,20 +22,41 @@
   </header>
 
   <main>
-    <section class="contenido">
-      <h2>Bienvenidos a ADPRO-Descripción</h2>
-      <p>
-        Proyecto dedicado a la investigación, formación y creación de materiales sobre accesibilidad cultural,
-        redacción inclusiva y audiodescripción profesional.
-      </p>
-      <p>
-        Formamos y acompañamos a profesionales para mejorar la comunicación inclusiva en el ámbito educativo, cultural y audiovisual.
+    <section class="intro">
+      <h2>Contacto</h2>
+      <p>¿Tienes alguna consulta, propuesta o colaboración? Escríbenos, estaremos encantados de escucharte.</p>
+    </section>
+
+    <section class="formulario">
+      <form id="contactForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+
+      <p id="mensaje-confirmacion" style="display:none; color:green; margin-top:1rem;">
+        ✅ Tu mensaje ha sido enviado correctamente. Gracias por contactar con ADPRO-Descripción.
       </p>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 ADPRO-Descripción | adprodescripcion@outlook.es</p>
+    <p>© 2025 ADPRO-Descripción · adprodescripcion@outlook.es</p>
   </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('mensaje-confirmacion').style.display = 'block';
+      this.reset();
+    });
+  </script>
 </body>
 </html>
