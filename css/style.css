@@ -83,3 +83,25 @@ footer {
     padding: 1.5rem;
   }
 }
+/* BOTONES PRINCIPALES */
+.botones-principales {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: #0055aa;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #003366;
+}
