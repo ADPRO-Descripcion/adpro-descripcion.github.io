@@ -91,7 +91,8 @@ main {
 footer {
   text-align: center;
   background: #004aad;
-  color: white;
+  color: #ffffff; /* ← ahora blanco */
   padding: 1rem;
   margin-top: 2rem;
+  font-weight: 500;
 }
