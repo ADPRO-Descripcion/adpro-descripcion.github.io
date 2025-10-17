@@ -100,3 +100,10 @@ footer {
   margin-top: 2rem;
   font-weight: 500;
 }
+/* Estilos para Proyectos destacados */
+.proyectos { margin: 2rem 0; max-width: 980px; margin-left: auto; margin-right: auto; }
+.proyecto { background-color: #ffffff; padding: 1rem; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+.proyecto h4 { margin: 0 0 .35rem 0; color: #004aad; font-size: 1.05rem; }
+.proyecto p { margin: 0; color: #2d2d2d; }
+.proyecto + .proyecto { margin-top: 1rem; }
+.cta { margin-top: 1rem; font-weight: 600; text-align: center; }
